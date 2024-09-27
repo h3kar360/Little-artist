@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Painter</title>
+    <style> 
+        body, html {
+            padding: 0; 
+            margin: 0; 
+            overflow: hidden; 
+            height: 100%;
+            background-color: bisque;
+        }    
+
+        canvas{
+            
+            background-color: black;
+        }
+
+        div {
+            color: black;
+            margin-bottom: 0.5rem;
+        }
+
+        button {
+            padding: 0.7rem 1rem;
+            background-color: gold;    
+            border: none;        
+        }
+
+        button:hover{
+            background-color: rgb(207, 176, 0);
+        }
+
+        .container{
+            margin: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="art-canvas"></canvas>
+    <div class="container">
+        <div>
+            What shall I paint?
+        </div>
+        <button id="lines">
+            Lines abstract
+        </button>
+        <button id="squares">
+            Squares abstract
+        </button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
